@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/icons8-new-message-64.png" type="image/x-icon">
+    <title>MALA's CROCHET WORK</title>
+</head>
+<body>
+    <div class="container center">
+        <div class="row">
+        <div class="col s12 l12">    
+        <h2 class="yellow-text text heading">MALA's CROCHET WORK</h2>
+        <ul>
+        </ul>
+        <div class="conatiner center">
+            <div class="row">
+                    <div class="card col s12 l3">
+                        <div class="card-image">
+                          <img src="./20210205_181007.jpg " class="responsive-img">
+                          <span class="card-title">STRAWBERRY KEY CHAIN</span>
+                        </div>
+                    </div>
+                    <div class="card col s12 l3">
+                        <div class="card-image">
+                          <img src="./20210205_181018.jpg" class="responsive-img">
+                          <span class="card-title">RABBIT COASTER</span>
+                        </div>
+                    </div>
+                    <div class="card col s12 l3">
+                        <div class="card-image">
+                          <img src="./20210205_181110.jpg" class="responsive-img">
+                          <span class="card-title">3D BUTTERFLY KEY CHAIN</span>
+                        </div>
+                    </div>
+                    <div class="card col s12 l3">
+                        <div class="card-image">
+                          <img src="./20210205_181139.jpg" class="responsive-img">
+                          <span class="card-title">3D FISH KEYCHAIN</span>
+                        </div>
+                    </div>
+                    <div class="card col s12 l3">
+                        <div class="card-image">
+                          <img src="./20210205_181121.jpg" class="responsive-img">
+                          <span class="card-title">PAW COASTER</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <form>
+            <label for="recipe"><h5 class="red-text msg">COMMENT BELOW</h5></label>
+            <div class="input_group">
+                <input type="text" class="form-control" class="pink" id="recipe" required>
+                <div class="input-group-append">
+                    <input type="submit" value="add" id="addBtn" class="btn pink lighten-1">
+                    <br>
+                    <label for="addBtn"><h6>DID YOU LIKE IT?? COMMENT BELOW</h6></label>
+                </div>
+            </div>
+        </form>
+        </div>
+        </div>
+    </div>
+
+</script>  
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-firestore.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBs3rRvQbjuqkao62B4duN-wD7P7es1QGk",
+    authDomain: "sudi-sweather.firebaseapp.com",
+    databaseURL: "https://sudi-sweather.firebaseio.com",
+    projectId: "sudi-sweather",
+    storageBucket: "sudi-sweather.appspot.com",
+    messagingSenderId: "11620329753",
+    appId: "1:11620329753:web:1a362e47dec7c71fd2fd88"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db=firebase.firestore();
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems);
+  });
+</script>
+<script src="sandbox.js"></script> 
+</body>
+</html>
+
+<style>
+    body{
+        background:url('./Quantum-Gradient.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+    .card{
+        margin-right: 6rem;
+    }
+    .row .col{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .card-title{
+        font-family: 'Yusei Magic', sans-serif;
+    }
+    input[type="text"]{
+        width: 50rem;
+    }
+    
+    .msg{
+        font-family: 'Yusei Magic', sans-serif;
+    }
+    .heading{
+        font-family: 'Potta One', cursive;
+    }
+    input[type="submit"]{
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+    <!-- .parallax-container{
+        margin-top:5rem;
+    } -->
+    li{
+        font-size: 1.3rem;
+    }
+    li div{
+        background-color: yellow;
+    }
+</style>
